@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Dancing+Script:wght@700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* { box-sizing: border-box; }
+body { margin: 0; font-family: 'Poppins', sans-serif; }
+
+.font-dancing { font-family: 'Dancing Script', cursive; }
+.font-poppins { font-family: 'Poppins', sans-serif; }
+
+/* Zomato-style card hover */
+.restaurant-card { transition: transform 0.2s ease, box-shadow 0.2s ease; }
+.restaurant-card:hover { transform: translateY(-4px); box-shadow: 0 12px 32px rgba(0,0,0,0.12); }
+
+/* Custom scrollbar */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: #f1f1f1; }
+::-webkit-scrollbar-thumb { background: #ff5722; border-radius: 3px; }
+
+/* Slick carousel dots */
+.slick-dots li button:before { color: #ff5722 !important; }
+.slick-dots li.slick-active button:before { color: #ff5722 !important; }
